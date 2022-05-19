@@ -22,6 +22,10 @@ module.exports = {
       jsx: true,
     },
   },
+  settings: {
+    // use default config:
+    'import/resolver': 'vite',
+  },
   // eslint-plugin-vue @typescript-eslint/eslint-plugin eslint-plugin-prettier的缩写
   plugins: ['vue', '@typescript-eslint', 'prettier'],
   rules: {
