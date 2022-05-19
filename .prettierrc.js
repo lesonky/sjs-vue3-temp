@@ -7,7 +7,6 @@ module.exports = {
   trailingComma: 'all', // 是否使用尾逗号
   bracketSpacing: true, // 对象大括号直接是否有空格，默认为 true，效果：{ a: 1 }
   jsxSingleQuote: true,
-  jsxBracketSameLine: true,
   printWidth: 80,
   overrides: [
     {
