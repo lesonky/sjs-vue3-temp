@@ -4,6 +4,20 @@ module.exports = {
   useTabs: false, //是否使用 tab 进行缩进，默认为false，表示用空格进行缩减
   singleQuote: true, // 字符串是否使用单引号，默认为 false，使用双引号
   semi: true, // 行尾是否使用分号，默认为true
-  trailingComma: "all", // 是否使用尾逗号
-  bracketSpacing: true // 对象大括号直接是否有空格，默认为 true，效果：{ a: 1 }
+  trailingComma: 'all', // 是否使用尾逗号
+  bracketSpacing: true, // 对象大括号直接是否有空格，默认为 true，效果：{ a: 1 }
+  jsxSingleQuote: true,
+  jsxBracketSameLine: true,
+  printWidth: 80,
+  overrides: [
+    {
+      files: '*.json',
+      options: {
+        printWidth: 200,
+      },
+    },
+  ],
+  arrowParens: 'always',
+  bracketSameLine: false,
+  proseWrap: 'preserve',
 };
