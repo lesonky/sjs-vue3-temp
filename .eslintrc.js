@@ -22,10 +22,23 @@ module.exports = {
       jsx: true,
     },
   },
+  settings: {
+    // use default config:
+    'import/resolver': {
+      typescript: {
+        alwaysTryTypes: true,
+        project: './tsconfig.json',
+      },
+    },
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
+    },
+  },
   // eslint-plugin-vue @typescript-eslint/eslint-plugin eslint-plugin-prettier的缩写
-  plugins: ['vue', '@typescript-eslint', 'prettier'],
+  plugins: ['import', 'vue', '@typescript-eslint', 'prettier'],
   rules: {
     'prettier/prettier': ['warn'],
+    'import/no-unresolved': 'error',
   },
   globals: {
     defineProps: 'readonly',
