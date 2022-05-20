@@ -3,7 +3,6 @@ import vue from '@vitejs/plugin-vue';
 import autoprefixer from 'autoprefixer';
 import svgLoader from 'vite-svg-loader';
 import viteImagemin from 'vite-plugin-imagemin';
-import eslintPlugin from 'vite-plugin-eslint';
 import path from 'path';
 
 // 全局 scss 文件的路径
@@ -37,7 +36,6 @@ export default defineConfig({
   plugins: [
     vue(),
     svgLoader(),
-    eslintPlugin(),
     viteImagemin({
       // 无损压缩配置，无损压缩下图片质量不会变差
       optipng: {
